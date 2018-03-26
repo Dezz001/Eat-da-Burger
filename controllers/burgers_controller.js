@@ -20,6 +20,7 @@ router.get("/", function(req, res) {
 
 // ============================================================================
 
+// Create routes and set up logic
 router.post("/", function(req, res) {
    burger.insertOne([
     "name", "devoured"
@@ -32,6 +33,7 @@ router.post("/", function(req, res) {
 
 // ============================================================================
 
+// Create routes and set up logic
 router.put("/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
@@ -47,15 +49,16 @@ router.put("/:id", function(req, res) {
 
 // ============================================================================
 
-router.delete("/:id", function(req, res) {
-  var condition = "id = " + req.params.id;
+// // Create routes and set up logic
+// router.delete("/:id", function(req, res) {
+//   var condition = "id = " + req.params.id;
 
-  burger.delete(condition, function() {
-    res.redirect("/");
-  });
-});
+//   burger.delete(condition, function() {
+//     res.redirect("/");
+//   });
+// });
 
-// ============================================================================
+// // ============================================================================
 
 // Export routes for server.js use.
 module.exports = router;

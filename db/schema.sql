@@ -1,28 +1,20 @@
-/*
 
-To run this file, we do the following in our Terminal:
-
-1. Go to the directory of this sql file.
-
-2. Get into our mysql console.
-
-3. Run "source schema.sql"
-
-*/
-
--- Create the database wishes_db and specified it for use.
+-- Create burgers database
 CREATE DATABASE burgers_db;
 USE burgers_db;
 
--- Create the table wishes.
+-- Create burgers table
 CREATE TABLE burgers
 (
 id int NOT NULL AUTO_INCREMENT,
-burger_name varchar(30) NOT NULL,
-devoured boolean false,
+burger_name VARCHAR(50) NOT NULL,
+devoured BOOLEAN DEFAULT false,
 -- devoured tinyint(0) NOT NULL DEFAULT "0",
+ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+dt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 PRIMARY KEY (id)
 );
+
 
 
 
