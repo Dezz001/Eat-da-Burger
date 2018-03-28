@@ -49,16 +49,5 @@ router.put("/:id", function(req, res) {
 
 // ============================================================================
 
-// // Create routes and set up logic
-// router.delete("/:id", function(req, res) {
-//   var condition = "id = " + req.params.id;
-
-//   burger.delete(condition, function() {
-//     res.redirect("/");
-//   });
-// });
-
-// // ============================================================================
-
 // Export routes for server.js use.
 module.exports = router;
