@@ -3,6 +3,8 @@ var orm = require("../config/orm.js");
 
 var burger = {
 
+  // =================================================================
+
   // Show database values
   selectAll: function(cb) {
     orm.selectAll("burgers", function(res) {
