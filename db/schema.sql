@@ -1,4 +1,6 @@
 
+-- I MANUALLY CREATED THIS ON MYSQL
+
 -- Create burgers database
 CREATE DATABASE burgers_db;
 USE burgers_db;
